@@ -1,0 +1,460 @@
+body {
+    background: #88c6ec;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* KOALA */
+.box {
+    position: relative;
+    min-width: 500px;
+    height: 350px;
+    background: none;
+}
+
+.head {
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    height: 67%;
+    width: 50%;
+    border-radius: 50%;
+    background: #a7b1b8;
+}
+
+.head-copy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #a7b1b8;
+    z-index: 2;
+}
+
+.ear-left,
+.ear-right {
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    top: 5%;
+    border-radius: 50%;
+    background: #a7b1b8;
+    z-index: 1;
+}
+.ear-left {
+    left: -20%;
+}
+.ear-right {
+    right: -20%;
+}
+
+.inner-ear {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #707375;
+}
+
+.eye-left,
+.eye-right {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 3;
+    animation: blink 2s infinite;
+}
+
+.eye-left {
+    left: 21%;
+}
+.eye-right {
+    right: 21%;
+}
+
+.pupil {
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    top: 35%;
+    left: 36%;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+}
+
+.nose {
+    position: absolute;
+    background: burlywood;
+    width: 25%;
+    height: 42.5%;
+    left: 37%;
+    top: 45%;
+    border-radius: 50px;
+    z-index: 4;
+}
+
+.hair-left,
+.hair-right {
+    position: absolute;
+
+    width: 20%;
+    height: 20%;
+    background: #a7b1b8;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.hair-left {
+    top: -8%;
+    left: 30%;
+}
+.hair-right {
+    top: -4%;
+    left: 48%;
+}
+
+/* BEAR */
+.bear-head {
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    height: 67%;
+    width: 50%;
+    border-radius: 50%;
+    background: #977e5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bear-head-copy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #977e5c;
+    z-index: 2;
+}
+
+.bear-ear-left,
+.bear-ear-right {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    top: 6%;
+    border-radius: 50%;
+    background: #977e5c;
+    z-index: 1;
+}
+.bear-ear-left {
+    left: -15%;
+}
+.bear-ear-right {
+    right: -15%;
+}
+
+.bear-inner-ear {
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #e0c4e7;
+}
+
+.bear-eye-left,
+.bear-eye-right {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 20%;
+    height: 23%;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 3;
+    animation: blink 2s infinite;
+}
+
+.bear-eye-left {
+    left: 21%;
+}
+.bear-eye-right {
+    right: 21%;
+}
+
+.bear-pupil {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 10%;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+}
+
+.bear-nose {
+    position: absolute;
+    background: burlywood;
+    top: 45%;
+    width: 38%;
+    height: 38%;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.bear-inner-nose {
+    position: absolute;
+    background: rgb(51, 51, 51);
+    top: 15%;
+    left: 28%;
+    width: 38%;
+    height: 38%;
+    border-radius: 50%;
+}
+
+.bear-mouth {
+    position: absolute;
+    background: transparent;
+    top: 13%;
+    left: 18%;
+    width: 58%;
+    height: 58%;
+    border-radius: 50%;
+    border-bottom: 7px solid rgb(51, 51, 51);
+}
+
+/* BIRD */
+
+.bird-head {
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    height: 67%;
+    width: 50%;
+    border-radius: 50%;
+    background: #eee584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird-eye {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 20%;
+    height: 20%;
+    top: 15%;
+    left: 20%;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+.bird-pupil {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 28%;
+    left: 0%;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+}
+
+.bird-nose {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    top: 35%;
+    left: -18.5%;
+    background: rgb(170, 94, 67);
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    transform: rotate(8deg);
+}
+
+.bird-tail-up-small,
+.bird-tail-big,
+.bird-tail-small {
+    position: absolute;
+    border-radius: 50%;
+    background: #eee584;
+}
+
+.bird-tail-up-small {
+    height: 27%;
+    width: 35%;
+    left: 80%;
+    top: 30%;
+}
+
+.bird-tail-big {
+    height: 29%;
+    width: 39%;
+    left: 80%;
+    top: 50%;
+}
+
+.bird-tail-small {
+    height: 17%;
+    width: 25%;
+    left: 80%;
+    top: 75%;
+}
+
+.bird-leg-left,
+.bird-leg-right {
+    position: absolute;
+    background: rgb(51, 51, 51);
+    height: 15%;
+    width: 5px;
+    top: 100%;
+}
+.bird-leg-right {
+    left: 55%;
+}
+
+/* LION */
+
+.lion-hair-one,
+.lion-hair-two,
+.lion-hair-three,
+.lion-hair-four,
+.lion-hair-five,
+.lion-hair-six {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+    width: 67%;
+    height: 31%;
+    background-color: #834e03;
+    border-radius: 60px;
+
+    
+}
+
+.lion-hair-two {
+    transform: rotate(45deg);
+}
+.lion-hair-three {
+    transform: rotate(90deg);
+}
+.lion-hair-four {
+    transform: rotate(135deg);
+}
+
+.lion-hair-five {
+    transform: rotate(180deg);
+}
+
+
+.lion-head {
+    position: absolute;
+    top: 26%;
+    left: 29%;
+    height: 57%;
+    width: 43%;
+    border-radius: 50%;
+    background: #bba274;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lion-ear-left, .lion-ear-right{
+    position: absolute;
+    background: #bba274;
+    top: 24%;
+    transform: translate(-50%, -50%);
+    height: 8%;
+    width: 12%;
+    border-radius: 150px 150px 0 0;
+}
+
+.lion-ear-left{
+    left: 26%;
+    transform: rotate(317deg);
+}
+
+.lion-ear-right{
+    left: 63%;
+    transform: rotate(39deg);
+}
+
+.lion-eye-left,
+.lion-eye-right {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 20%;
+    height: 23%;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 3;
+    animation: blink 2s infinite;
+}
+
+.lion-eye-left {
+    left: 21%;
+}
+.lion-eye-right {
+    right: 21%;
+}
+
+.lion-pupil {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 10%;
+    border-radius: 50%;
+    background: rgb(51, 51, 51);
+}
+
+.lion-nose{
+    position: absolute;
+    height: 28%;
+    width: 19%;
+    background: #383838;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: 5px;
+    top: 40%;
+}
+
+.lion-mouth-line{
+    position: absolute;
+    height: 10%;
+    width: 1%;
+    background: #383838;
+    top: 68%;
+}
+
+.lion-mouth{
+    position: absolute;
+    background: transparent;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    height: 8%;
+    width: 25%;
+    border-radius: 150px 150px 0 0;
+    transform: rotate(180deg);
+    border-top: 4px solid #383838;
+
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        transform: scale(1, 0.05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
